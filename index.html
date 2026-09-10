@@ -4,11 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FSD LAB#1</title>
+
+    <style>
+        body {
+            background-color: rgb(71, 196, 175);
+            display: flex;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .full {
+            background-color: grey;
+            border: 3px solid black;
+            width: 350px;
+            padding: 10px;
+
+
+        }
+
+        .screen {
+            background-color: white;
+            border: 3px solid black;
+            height: 70px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .screen-p {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .buttons {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            gap: 10px;
+        }
+
+        button {
+            height: 60px;
+            width: 70px;
+            font-size: 22px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .operator {
+            background-color: orange;
+        }
+
+        .clear {
+            background-color: red;
+        }
+
+        .equal {
+            background-color: green;
+        }
+
+        #but {
+            display: flex;
+            flex-direction: row;
+            width: 94%;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    </style>
 </head>
 
 <body>
-<h1>hy</h1>
+
+    <div>
+        <h1 class="main">Calculator UI</h1>
+
+        <div class="full">
+
+            <div class="screen">
+                <p class="screen-p">0</p>
+            </div>
+
+            <div class="buttons">
+
+                <div id="but">
+                    <button class="clear">C</button>
+                    <button>+/-</button>
+                    <button>%</button>
+                    <button class="operator">÷</button>
+                </div>
+
+                <div id="but">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button class="operator">×</button>
+                </div>
+
+                <div id="but">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button class="operator">−</button>
+                </div>
+
+                <div id="but">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button class="operator">+</button>
+                </div>
+
+                <div id="but">
+                    <button>0</button>
+                    <button>.</button>
+                    <button class="equal">=</button>
+                    <button style="color: ;"></button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
 </body>
 
 </html>
